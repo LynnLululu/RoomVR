@@ -8178,8 +8178,9 @@ GameObject:
   - component: {fileID: 1441799111}
   - component: {fileID: 1441799114}
   - component: {fileID: 1441799112}
+  - component: {fileID: 1441799113}
   m_Layer: 5
-  m_Name: CountdownText
+  m_Name: Time Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8236,7 +8237,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 00
+  m_Text: 'Time: 0:00:00'
+--- !u!114 &1441799113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441799110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388b7e00496462d48904b798c3aba4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textObject: {fileID: 1441799112}
 --- !u!222 &1441799114
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9504,7 +9518,6 @@ GameObject:
   - component: {fileID: 1713634572}
   - component: {fileID: 1713634571}
   - component: {fileID: 1713634575}
-  - component: {fileID: 1713634576}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9607,19 +9620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55187bde9a0b04a4393d65db6ca6ece1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1713634576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713634570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57846e1a99889254ea32f76ec2625e31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countdownText: {fileID: 1441799112}
 --- !u!1 &1732780845
 GameObject:
   m_ObjectHideFlags: 0
