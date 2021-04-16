@@ -4,37 +4,29 @@ using UnityEngine;
 
 public class VaseMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public float speed = 6f;
-    private float speed0 = 0f;
-  
-    // Start is called before the first frame update
+    Rigidbody rb;
+    bool selected = false;
+
     void Start()
     {
-      
+        rb = GetComponent<Rigidbody>();
     }
 
-    
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1"))
+        if (selected && Input.GetButton("Fire1"))
         {
-           
-                transform.Translate(Vector3.left * speed0 * Time.deltaTime);
-               
+            transform.position = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Camera.main.WorldToScreenPoint(gameObject.transform.position).z));
         }
-
     }
 
-    public void MoveForward()
+    public void EnbleDrag()
     {
-        speed0 = speed;
+        selected = true;
     }
 
-    public void Stop()
+    public void DisableDrag()
     {
-        speed0 = 0f;
+        selected = false;
     }
-
 }
