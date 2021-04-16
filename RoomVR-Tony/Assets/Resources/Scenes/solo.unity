@@ -4330,6 +4330,25 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 798552888}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &800512508 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1925195702163114, guid: 67e2cb687ba4afc4ca227ab5848aeb95,
+    type: 3}
+  m_PrefabInstance: {fileID: 835715826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &800512512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800512508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0059999996, y: 0.005900001, z: 0.0070000007}
+  m_Center: {x: -0.0029999998, y: -0.0029500006, z: 0.0035000003}
 --- !u!1 &805018496
 GameObject:
   m_ObjectHideFlags: 0
@@ -4756,6 +4775,11 @@ PrefabInstance:
       propertyPath: speed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 408970649716516514, guid: 67e2cb687ba4afc4ca227ab5848aeb95,
+        type: 3}
+      propertyPath: Clipboard
+      value: 
+      objectReference: {fileID: 291323200}
     - target: {fileID: 681497480526435863, guid: 67e2cb687ba4afc4ca227ab5848aeb95,
         type: 3}
       propertyPath: m_fontStyle
@@ -4775,6 +4799,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: 1234
+      objectReference: {fileID: 0}
+    - target: {fileID: 1145358662875123915, guid: 67e2cb687ba4afc4ca227ab5848aeb95,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1148932648439409677, guid: 67e2cb687ba4afc4ca227ab5848aeb95,
         type: 3}
