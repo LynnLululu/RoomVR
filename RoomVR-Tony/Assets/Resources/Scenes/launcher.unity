@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controlPanel: {fileID: 1241671367}
   feedbackText: {fileID: 1814088000}
-  maxPlayersPerRoom: 2
+  maxPlayersPerRoom: 1
 --- !u!1001 &223693602
 PrefabInstance:
   m_ObjectHideFlags: 0
