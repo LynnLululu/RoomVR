@@ -4,40 +4,50 @@ using UnityEngine;
 
 public class DrawerOpen : MonoBehaviour
 {
-    public float speed = 12f;
-    private float speed0 = 0f;
-    private bool boxOpened;
-    private bool coroutineAllowed;
+    public float distance = 0.8f;
+    private bool opened;
+    private bool enable;
+    private bool selected;
+    private Vector3 initialPosition;
+    private Vector3 position;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        boxOpened = false;
-        coroutineAllowed = true;
+        opened = false;
+        enable = false;
+        selected = false;
+        initialPosition = transform.position;
+        position = initialPosition;
       
     }
 
     // Update is called once per frame
     void Update()
-    {   
-        if (Input.GetButton("Fire1"))
+    {
+        transform.position = position;
+    }
+
+    public void HasKey()
+    {
+        enable = true;
+    }
+
+    public void Open()
+    {
+        if (enable)
         {
-            
-                transform.Translate(Vector3.down * speed0 * Time.deltaTime);
-      
+            if (!opened)
+            {
+                position = new Vector3(initialPosition.x, initialPosition.y, initialPosition.z + distance);
+                opened = true;
+            }
+            else
+            {
+                position = initialPosition;
+                opened = false;
+            }
         }
-
     }
-
-    public void MoveForward()
-    {
-        speed0 = speed;
-    }
-
-    public void Stop()
-    {
-        speed0 = 0f;
-    }
-
 }
