@@ -19,7 +19,6 @@ public class ItemAppear : MonoBehaviour
     {
         GoldKey.SetActive(false);
         Panel.SetActive(true);
-        GameObject.Find("Drawer").SendMessage("HasKey");
     }
         
   
